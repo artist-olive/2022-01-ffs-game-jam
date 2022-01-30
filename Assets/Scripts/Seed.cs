@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Seed : MonoBehaviour
 {
+    [SerializeField] ParticleSystem splashParticles;
     void OnCollisionEnter(Collision collision)
     {
         if(collision.gameObject.CompareTag("Level"))
@@ -12,7 +13,8 @@ public class Seed : MonoBehaviour
             Rigidbody rigidBody = gameObject.GetComponent<Rigidbody>();
             rigidBody.isKinematic = true;
         } else if (collision.gameObject.CompareTag("Water")) {
-            Debug.Log("Water");
+            ParticleSystem particles = gameObject.GetComponent<ParticleSystem>();
+            particles.Play();
         }
     }
 }
