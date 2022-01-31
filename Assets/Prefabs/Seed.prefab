@@ -18,7 +18,7 @@ GameObject:
   - component: {fileID: 7512649633580681318}
   m_Layer: 0
   m_Name: Seed
-  m_TagString: Untagged
+  m_TagString: Seed
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -128,6 +128,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   splashParticles: {fileID: 3291921055006184566, guid: d27148864ca498540b113b41e62f6a64, type: 3}
+  OriginalPosition: {x: 0, y: 0, z: 0}
+  Sprout: {fileID: 78435692261529987, guid: e06ffe03937d7444f8ac7cb3281aa6ad, type: 3}
 --- !u!198 &-3904402260090057097
 ParticleSystem:
   m_ObjectHideFlags: 0

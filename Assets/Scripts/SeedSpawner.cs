@@ -21,8 +21,8 @@ public class SeedSpawner : MonoBehaviour
         while (true)
         {
             yield return new WaitForSeconds(1);
-            bool shouldSpawnSeed = Random.Range(0f,1f) <= seedSpawnProbability;
-            if(shouldSpawnSeed)
+            bool shouldSpawnSeed = Random.Range(0f, 1f) <= seedSpawnProbability;
+            if (shouldSpawnSeed)
             {
                 SpawnSeed();
             }
@@ -33,6 +33,6 @@ public class SeedSpawner : MonoBehaviour
     {
         float RandomX = Random.Range(leftBound, rightBound);
         float RandomZ = Random.Range(frontBound, backBound);
-        Instantiate(Seed, new Vector3(RandomX, upperBound, RandomZ),  Quaternion.identity);
+        Instantiate(Seed, new Vector3(RandomX, upperBound, RandomZ), Quaternion.identity);
     }
 }

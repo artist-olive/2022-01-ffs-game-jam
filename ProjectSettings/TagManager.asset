@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Level
   - Water
+  - Seed
   layers:
   - Default
   - TransparentFX
