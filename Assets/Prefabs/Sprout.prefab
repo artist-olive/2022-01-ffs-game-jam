@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 746885553567662905}
   - component: {fileID: 4463810369223822492}
   - component: {fileID: 1879782977158412374}
+  - component: {fileID: 8470893051608769849}
   m_Layer: 0
   m_Name: Sprout
   m_TagString: Untagged
@@ -81,3 +82,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &8470893051608769849
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 78435692261529987}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cdaecda570afdea499a32c52050a0698, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  plants:
+  - {fileID: 382392328444996495, guid: 9a35a31f38e847f478e649d51619211f, type: 3}
+  - {fileID: 1789537227038521263, guid: 8e923374a8a45db48b757f68a3d5a35f, type: 3}
+  - {fileID: 5544209979330647765, guid: 3ceb76ebb28273b47acff51895fac2fe, type: 3}
