@@ -10,7 +10,7 @@ public class SeedSpawner : MonoBehaviour
     [SerializeField] private float upperBound = 8.6f;
     [SerializeField] private float frontBound = -4f;
     [SerializeField] private float backBound = 4f;
-    [SerializeField] private float seedSpawnProbability = 0.7f;
+    [SerializeField] private float seedSpawnProbability = 0.3f;
 
     void Start()
     {
@@ -20,7 +20,7 @@ public class SeedSpawner : MonoBehaviour
     {
         while (true)
         {
-            yield return new WaitForSeconds(1);
+            yield return new WaitForSeconds(2);
             bool shouldSpawnSeed = Random.Range(0f, 1f) <= seedSpawnProbability;
             if (shouldSpawnSeed)
             {

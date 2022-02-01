@@ -14,7 +14,7 @@ public class Sprout : MonoBehaviour
 
     private IEnumerator HandleReplaceWithPlant()
     {
-        yield return new WaitForSeconds(3);
+        yield return new WaitForSeconds(Random.Range(3,10));
         int RandomPlant = Random.Range(0, plants.Length);
         Instantiate(plants[RandomPlant], gameObject.transform.position, Quaternion.Euler(new Vector3(0, Random.Range(0, 360), 0)));
         Destroy(gameObject);
